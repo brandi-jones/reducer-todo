@@ -7,12 +7,10 @@ import TodoForm from './components/TodoForm.js';
 
 function App() {
 
-  const [state, dispatch] = useReducer(reducer, initialNotes);
-  console.log(state, dispatch);
-
   return (
     <div className="App">
-      <TodoList todosArray={state.todos}/>
+      <TodoList/>
+     
     </div>
   );
 }
