@@ -1,5 +1,4 @@
 import React, {useState, useReducer} from "react"
-import Todo from "./Todo.js";
 import {reducer, initialNotes} from "../reducers/reducer.js";
 import {Button, Form, FormGroup, Input, Label} from 'reactstrap'
 
@@ -14,7 +13,6 @@ const TodoList = () => {
       setNewTodo(event.target.value);
   };
 
-  console.log("rendered TodoList")
     return(
         <>
         
